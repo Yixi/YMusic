@@ -1,4 +1,5 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import Main from "./components/main";
 
-ReactDOM.render(<div>dsafdsafdsaf</div>, document.getElementById('mainApp'));
+ReactDOM.render(<Main/>, document.getElementById('mainApp'));

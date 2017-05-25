@@ -2,6 +2,9 @@
   "name": "YMusic",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev": "node fuse.js"
+  },
   "repository": "git@github.com:Yixi/YMusic.git",
   "author": "Yixi <lyh1112@gmail.com>",
   "license": "MIT",
@@ -13,6 +16,8 @@
   },
   "devDependencies": {
     "fuse-box": "^2.0.0",
+    "postcss": "^6.0.1",
+    "precss": "^1.4.0",
     "typescript": "^2.3.3"
   }
 }

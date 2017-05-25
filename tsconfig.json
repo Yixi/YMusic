@@ -9,5 +9,8 @@
   },
   "include": [
     "./src/**/*"
+  ],
+  "files": [
+    "definitions/image.d.ts"
   ]
 }
