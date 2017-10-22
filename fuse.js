@@ -4,7 +4,8 @@ const {
     WebIndexPlugin,
     CSSPlugin,
     ImageBase64Plugin,
-    PostCSS
+    PostCSS,
+    CopyPlugin
 } = require('fuse-box');
 const precss = require('precss');
 
@@ -14,6 +15,7 @@ const fuseBox = FuseBox.init({
     sourceMaps: true,
     plugins: [
         [PostCSS({plugins: [precss]}), CSSPlugin()],
+        CopyPlugin({ useDefault : false, files: ['.mp3'] }),
         ImageBase64Plugin(),
         HTMLPlugin({useDefault:false}),
         WebIndexPlugin({template: './src/index.html'})
